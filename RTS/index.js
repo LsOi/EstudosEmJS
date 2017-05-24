@@ -10,7 +10,7 @@ var recursos = {
 
 var campones = {
   speedColect: 2,
-  transpCap: 10 //capacidade de transporte
+  transpCap: 10 
 };
 
 
@@ -54,7 +54,7 @@ class colect{
   foodColect(){
     document.getElementById("bnt-foodColect").onclick = function() {
       recursos.food += campones.transpCap;
-      document.getElementById('food').innerHTML = recursos.food + " Food";
+      document.getElementById('food').innerHTML = recursos.food;
     };
   }
 
@@ -62,7 +62,7 @@ class colect{
   woodColect(){
     document.getElementById("bnt-woodColect").onclick = function(){
       recursos.wood += campones.transpCap;
-      document.getElementById('wood').innerHTML = recursos.wood + " Wood";
+      document.getElementById('wood').innerHTML = recursos.wood;
     };
   }
 
@@ -70,7 +70,7 @@ class colect{
   stoneColect(){
     document.getElementById("bnt-stoneColect").onclick = function(){
       recursos.stone += campones.transpCap;
-      document.getElementById('stone').innerHTML = recursos.stone + " Stone";
+      document.getElementById('stone').innerHTML = recursos.stone;
     };
   }
 }
