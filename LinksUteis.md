@@ -18,3 +18,10 @@
 
 
 
+
+#### Geradores de sites estaticos
+
+[hexo](https://hexo.io/)
+
+
+
