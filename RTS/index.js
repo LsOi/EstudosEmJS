@@ -9,10 +9,12 @@ var recursos = {
 
 
 var campones = {
+  funct: null,
+  atk: 0,
+  def:0,
   speedColect: 2,
-  transpCap: 10 
+  transpCap: 10
 };
-
 
 
 class upgrades{
@@ -52,10 +54,10 @@ class colect{
 
   //Coleta Foods
   foodColect(){
-    document.getElementById("bnt-foodColect").onclick = function() {
-      recursos.food += campones.transpCap;
-      document.getElementById('food').innerHTML = recursos.food;
-    };
+      document.getElementById("bnt-foodColect").onclick = function() {
+        recursos.food += campones.transpCap;
+        document.getElementById('food').innerHTML = recursos.food;
+      };
   }
 
   // Coleta Woods
@@ -82,8 +84,8 @@ coletar.woodColect();
 coletar.stoneColect();
 coletar.foodColect();
 
-document.getElementById('food').innerHTML = recursos.food + " Food";
-document.getElementById('wood').innerHTML = recursos.wood + " Wood";
-document.getElementById('stone').innerHTML = recursos.stone + " Stone";
+document.getElementById('food').innerHTML = recursos.food;
+document.getElementById('wood').innerHTML = recursos.wood;
+document.getElementById('stone').innerHTML = recursos.stone;
 
 };
